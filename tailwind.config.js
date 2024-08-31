@@ -33,7 +33,10 @@ module.exports = {
       },
       backgroundColor: {
         primary: "var(--bg-primary)",
+        red: "var(--bg-red)",
         tertiary: "var(--bg-tertiary)",
+        "tertiary-dark": "var(--bg-tertiary-dark)",
+        field: "var(--bg-field)",
         success: "var(--bg-success)",
         error: "var(--bg-error)",
         "error-lighter": "var(--bg-error-lighter)",

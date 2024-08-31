@@ -5,13 +5,7 @@ const GuestLayout = () => {
   //   return <Navigate to={"/"} />;
   // }
 
-  return (
-    <div>
-      <div className="min-w-screen w-full">
-        <div>{<Outlet />}</div>
-      </div>
-    </div>
-  );
+  return <div>{<Outlet />}</div>;
 };
 
 export default GuestLayout;

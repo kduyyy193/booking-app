@@ -6,7 +6,7 @@
   :root {
     --text-primary: #1D2433;
     --text-seconday: #4A505C;
-    --text-tertiary: #0a69ad;
+    --text-tertiary: #FFF2F0;
     --text-tertiary-dark: #003e6b;
     --text-error: #ea4335;
     --text-success-dark: #2ac267;
@@ -29,7 +29,9 @@
 
     --bg-primary: #FF3B42;
     --bg-tertiary: #FFF2F0;
-    --bg-tertiary-dark: #003e6b;
+    --bg-red: #E02D3C;
+    --bg-field: #EAECF0;
+    --bg-tertiary-dark: #E1E6EF;
     --bg-success: #16c60c;
     --bg-success-dark: #2ac267;
     --bg-warning: #fba705;
@@ -144,7 +146,7 @@
 }
 
 * {
-  font-family: "Inter", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 html,
@@ -207,4 +209,11 @@ body,
 
 .custom-tabs .ant-tabs-nav {
   margin-bottom: 0px !important;
+}
+
+.ant-select-single,
+.ant-input-number-outlined,
+.ant-input-number-input-wrap input {
+  height: 56px !important;
+  line-height: 56px !important;
 }

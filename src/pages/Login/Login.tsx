@@ -5,8 +5,8 @@ import { useNavigate } from "react-router-dom";
 import { Button, App, Alert } from "antd";
 import { REGEX_EMAIL } from "configs/auth";
 import Page from "components/Page";
-import classNames from "classnames";
 import ForgotPassword from "./components/ForgotPassword";
+import cn from "utils/cn";
 
 type FormInputs = {
   email: string;
@@ -80,7 +80,7 @@ const Login = () => {
                     name={"email"}
                     label="Email"
                     placeholder="Email"
-                    moreClass="h-12.5 text-4 leading-5.5"
+                    moreclass="h-12.5 text-4 leading-5.5"
                     rules={{
                       required: "This is a required field!",
                       pattern: {
@@ -97,14 +97,14 @@ const Login = () => {
                     name={"password"}
                     label="Password"
                     placeholder="Password"
-                    moreClass="h-12.5 text-4 leading-5.5"
+                    moreclass="h-12.5 text-4 leading-5.5"
                     endAdornment={
                       <i
                         onClick={toggleShowPassword}
-                        className={classNames(
+                        className={cn(
                           "cursor-pointer text-lg las absolute top-2.5 right-3 z-10",
-                          { "la-eye-slash": !showPassword },
-                          { "la-eye": showPassword }
+                          "la-eye-slash" && !showPassword,
+                          "la-eye" && showPassword
                         )}
                       />
                     }

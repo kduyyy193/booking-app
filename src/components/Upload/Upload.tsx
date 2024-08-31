@@ -7,7 +7,7 @@ import IFile from "interfaces/IFile";
 import React from "react";
 
 interface IUploadProps extends UploadProps {
-  moreClass?: string;
+  moreclass?: string;
   maxSize?: number;
   ref?: React.RefObject<unknown>;
   onStartUpload?: () => void;
@@ -18,7 +18,7 @@ const Upload: React.FC<IUploadProps> = ({
   disabled,
   accept = "image/*",
   showUploadList,
-  moreClass = "",
+  moreclass = "",
   maxSize = 10,
   onStartUpload,
   onEndUpload,
@@ -63,7 +63,7 @@ const Upload: React.FC<IUploadProps> = ({
   return (
     <AntUpload
       accept={accept}
-      className={classNames("custom-upload-v2", moreClass)}
+      className={classNames("custom-upload-v2", moreclass)}
       showUploadList={showUploadList}
       beforeUpload={handleBeforeUpload}
       disabled={disabled}
