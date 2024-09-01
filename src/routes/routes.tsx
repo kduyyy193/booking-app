@@ -1,13 +1,16 @@
 import Fallback from "components/Fallback";
 import DefaultLayout from "layouts/DefaultLayout";
 import GuestLayout from "layouts/GuestLayout";
-import Booking from "pages/Booking";
-import Notfound from "pages/NotFound";
-import User from "pages/User";
 import React, { lazy } from "react";
 import { Route, Routes } from "react-router-dom";
+import routerLinks from "./routerLinks";
 
-const Login = lazy(() => import("pages/Login"));
+const User = lazy(() => import("pages/User"));
+const Notfound = lazy(() => import("pages/NotFound"));
+const BookATable = lazy(() => import("pages/Booking/BookATable"));
+const CustomerInfomation = lazy(() => import("pages/Booking/CustomerInfomation"));
+const ReviewSummary = lazy(() => import("pages/Booking/ReviewSummary"));
+const Reserved = lazy(() => import("pages/Booking/Reserved"));
 
 interface IRoute {
   id: string;
@@ -26,12 +29,22 @@ const ROUTES: IRoute[] = [
       {
         id: "b9e86a11-665f-47dd-90b5-eb6d1074b7c4",
         path: "/",
-        element: <Booking />,
+        element: <BookATable />,
       },
       {
-        id: "b9e86a11-665f-47dd-90b5-eb6d1074b7c6",
-        path: "login",
-        element: <Login />,
+        id: "b9e86a11-665f-47dd-90b5-eb6d1074b7c5",
+        path: routerLinks("customerInfomation"),
+        element: <CustomerInfomation />,
+      },
+      {
+        id: "b9e86a11-665f-47dd-90b5-eb6d1074b7c99",
+        path: routerLinks("reviewSummary"),
+        element: <ReviewSummary />,
+      },
+      {
+        id: "b9e86a11-665f-47dd-9bb5-eb6d10ggb7c99",
+        path: routerLinks("reservation"),
+        element: <Reserved />,
       },
     ],
   },

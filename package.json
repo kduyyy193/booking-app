@@ -35,6 +35,7 @@
     "firebase": "^10.8.0",
     "fs": "^0.0.1-security",
     "line-awesome": "^1.3.0",
+    "numeral": "^2.0.6",
     "qs": "^6.11.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -51,6 +52,7 @@
   },
   "devDependencies": {
     "@types/node": "^20.11.16",
+    "@types/numeral": "^2.0.5",
     "@types/qs": "^6.9.11",
     "@types/react": "^18.2.43",
     "@types/react-dom": "^18.2.17",

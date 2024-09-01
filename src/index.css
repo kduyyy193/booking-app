@@ -55,7 +55,7 @@
     --bg-light-smoke: #f5f6f6;
 
     --border-primary: #00abc5;
-    --border-tertiary: #0a69ad;
+    --border-tertiary: #E1E6EF;
     --border-error: #ea4335;
     --border-success-dark: #2ac267;
     --border-info: #4096ff;
@@ -215,5 +215,5 @@ body,
 .ant-input-number-outlined,
 .ant-input-number-input-wrap input {
   height: 56px !important;
-  line-height: 56px !important;
+  border-radius: 8px !important;
 }

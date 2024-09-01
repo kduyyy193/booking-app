@@ -7,7 +7,7 @@ import { Control, Controller, FieldPath, RegisterOptions } from "react-hook-form
 interface IProps<T extends Record<string, any>> {
   control: Control<T>;
   name: FieldPath<T>;
-  moreclass?: string;
+  className?: string;
   placeholder?: string;
   label?: string;
   endAdornment?: React.ReactNode;
@@ -30,6 +30,7 @@ const RHFTextAreaField = <T extends Record<string, any>>({
   disabled,
   labelRequired = true,
   rules,
+  className,
   rows = 2,
   maxLength,
 }: IProps<T>) => {
@@ -52,6 +53,10 @@ const RHFTextAreaField = <T extends Record<string, any>>({
               disabled={disabled}
               rows={rows}
               maxLength={maxLength}
+              className={className}
+              style={{
+                fontSize: 16,
+              }}
             />
             <HelperText message={error?.message || ""} />
           </div>
