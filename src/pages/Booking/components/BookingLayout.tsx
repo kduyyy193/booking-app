@@ -35,9 +35,9 @@ interface IProps {
   no: number;
   name: string;
   type: "process" | "confirm" | "done";
-  isSubmingting: boolean;
+  isSubmingting?: boolean;
   onBack?: () => void;
-  onSubmit: () => void;
+  onSubmit?: () => void;
   children: JSX.Element;
 }
 
@@ -93,7 +93,7 @@ const BookingLayout = ({ no, name, type, isSubmingting, children, onSubmit, onBa
               </>
             )}
           </div>
-          <div className="mt-6">
+          <div className="mt-6 pb-24">
             {children}
             <div className="fixed bottom-0 left-0">
               <div className="w-screen bg-white h-24 shadow-[0px_-4px_8px_0px_#0000000A] px-4">

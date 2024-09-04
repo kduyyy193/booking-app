@@ -9,6 +9,7 @@ module.exports = {
       },
       textColor: {
         primary: "var(--text-primary)",
+        red: "var(--text-red)",
         secondary: "var(--text-seconday)",
         tertiary: "var(--text-tertiary)",
         "tertiary-dark": "var(--text-tertiary-dark)",

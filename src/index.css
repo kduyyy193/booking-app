@@ -5,6 +5,7 @@
 @layer base {
   :root {
     --text-primary: #1D2433;
+    --text-red: #FF3B42;
     --text-seconday: #4A505C;
     --text-tertiary: #FFF2F0;
     --text-tertiary-dark: #003e6b;
